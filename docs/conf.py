@@ -21,6 +21,9 @@ copyright = "2021 Dan Foreman-Mackey"
 version = sphinx_documenter_deploy.__version__
 release = sphinx_documenter_deploy.__version__
 
+templates_path = ["_templates"]
+html_static_path = ["_static"]
+
 exclude_patterns = ["_build"]
 html_theme = "sphinx_book_theme"
 html_title = "sphinx documenter deploy"
@@ -42,3 +45,12 @@ html_theme_options = {
 html_baseurl = "https://dfm.io/sphinx-documenter-deploy/"
 # jupyter_execute_notebooks = "off"
 execution_timeout = -1
+
+html_sidebars = {
+    "**": [
+        "sidebar-logo.html",
+        "sbt-sidebar-nav.html",
+        "sbt-sidebar-footer.html",
+        "sidebar-versions.html",
+    ]
+}

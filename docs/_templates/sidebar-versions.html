@@ -1,0 +1,17 @@
+<div class="docs-version-selector field has-addons rst-versions rst-badge">
+  <div class="control">
+    <span class="docs-label button is-static is-size-7">Version</span>
+  </div>
+  <div class="docs-selector control is-expanded">
+    <div class="select is-fullwidth is-size-7">
+      <select id="documenter-version-selector"></select>
+    </div>
+  </div>
+</div>
+
+<script>
+  var DOCUMENTER_CURRENT_VERSION = "{{ version }}";
+</script>
+
+<script src="{{ pathto('_static/js/versions.js', 1) }}"></script>
+<script src="{{ pathto('_static/../../versions.js', 1) }}"></script>
