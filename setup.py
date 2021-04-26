@@ -53,12 +53,6 @@ def find_meta(meta, meta_file=read(META_PATH)):
 if __name__ == "__main__":
     setup(
         name=NAME,
-        use_scm_version={
-            "write_to": os.path.join(
-                "src/{0}/{0}_version.py".format("sphinx_documenter_deploy")
-            ),
-            "write_to_template": '__version__ = "{version}"\n',
-        },
         author=find_meta("author"),
         author_email=find_meta("email"),
         maintainer=find_meta("author"),

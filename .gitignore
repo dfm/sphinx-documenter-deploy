@@ -1,1 +1,2 @@
 docs/_build
+src/sphinx_documenter_deploy/sphinx_documenter_deploy_version.py
