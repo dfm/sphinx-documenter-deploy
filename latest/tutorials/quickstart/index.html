@@ -63,10 +63,7 @@
       <h1 class="site-logo" id="site-title">sphinx documenter deploy</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="../../search/" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</div><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
@@ -99,7 +96,23 @@
 <div class="navbar_extra_footer">
   Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
 </div>
+<div class="docs-version-selector field has-addons rst-versions rst-badge">
+  <div class="control">
+    <span class="docs-label button is-static is-size-7">Version</span>
+  </div>
+  <div class="docs-selector control is-expanded">
+    <div class="select is-fullwidth is-size-7">
+      <select id="documenter-version-selector"></select>
+    </div>
+  </div>
+</div>
 
+<script>
+  var DOCUMENTER_CURRENT_VERSION = "0.1.dev4+g5887d7a";
+</script>
+
+<script src="../../_static/js/versions.js"></script>
+<script src="../../_static/../../versions.js"></script>
 </div>
 
 
